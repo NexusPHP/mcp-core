@@ -11,9 +11,16 @@ declare(strict_types=1);
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace Nexus\Mcp\Core\Schema;
+namespace Nexus\Mcp\Core\Schema\Resource;
 
 use Nexus\Assert\Assert;
+use Nexus\Mcp\Core\Schema\Annotations;
+use Nexus\Mcp\Core\Schema\Arrayable;
+use Nexus\Mcp\Core\Schema\BaseMetadata;
+use Nexus\Mcp\Core\Schema\Icon;
+use Nexus\Mcp\Core\Schema\Icons;
+use Nexus\Mcp\Core\Schema\Meta;
+use Nexus\Mcp\Core\Schema\ParsesNumber;
 use Nexus\Mcp\Core\Validation\IdentifierNameValidator;
 use Nexus\Mcp\Core\Validation\Rfc3986UriValidator;
 

@@ -11,9 +11,10 @@ declare(strict_types=1);
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace Nexus\Mcp\Core\Schema;
+namespace Nexus\Mcp\Core\Schema\Task;
 
 use Nexus\Assert\Assert;
+use Nexus\Mcp\Core\Schema\Arrayable;
 use Nexus\Mcp\Core\Schema\Enum\TaskStatus;
 use Nexus\Mcp\Core\Validation\Iso8601DateTimeValidator;
 

@@ -11,11 +11,10 @@ declare(strict_types=1);
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace Nexus\Mcp\Core\Schema\ResourceContents;
+namespace Nexus\Mcp\Core\Schema\Resource;
 
 use Nexus\Assert\Assert;
 use Nexus\Mcp\Core\Schema\Meta;
-use Nexus\Mcp\Core\Schema\ResourceContents;
 
 /**
  * Binary resource contents. The `blob` payload carries a base64-encoded

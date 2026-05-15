@@ -21,11 +21,8 @@ use Nexus\Mcp\Core\Schema\RequestId;
  */
 final class MethodNotFoundException extends AbstractJsonRpcProtocolException
 {
-    public function __construct(
-        public readonly string $method,
-        ?RequestId $requestId = null,
-        ?\Throwable $previous = null,
-    ) {
+    public function __construct(string $method, ?RequestId $requestId = null, ?\Throwable $previous = null)
+    {
         parent::__construct(
             \sprintf('No registration found for method "%s".', $method),
             $requestId,

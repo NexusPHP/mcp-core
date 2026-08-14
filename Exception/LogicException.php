@@ -14,12 +14,8 @@ declare(strict_types=1);
 namespace Nexus\Mcp\Core\Exception;
 
 /**
- * Thrown when the same extension identifier is declared more than once.
+ * Developer-facing SDK misuse, surfaced at composition time and never sent to a peer.
  */
-final class DuplicateExtensionException extends \LogicException implements McpExceptionInterface
+final class LogicException extends \LogicException implements McpExceptionInterface
 {
-    public function __construct(string $identifier)
-    {
-        parent::__construct(\sprintf('Extension "%s" is declared more than once.', $identifier));
-    }
 }
